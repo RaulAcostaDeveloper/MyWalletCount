@@ -1,0 +1,27 @@
+.contenedorModal{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    
+}
+.cuadroModal{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(108,178,224,1);
+    color: rgba(216, 231, 241, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    -webkit-box-shadow: 0px 0px 15px 4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 15px 4px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 15px 4px rgba(0,0,0,0.75);
+}

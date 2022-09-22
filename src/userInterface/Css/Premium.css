@@ -1,0 +1,31 @@
+.Premium{
+    height: 100vh;
+}
+.info{
+    height: 74%;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(216, 231, 241, 1);
+}
+.ConseguirPremium{
+    cursor:pointer;
+    height: 20%;
+    background-color: rgba(255,110,84, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    color: rgba(216, 231, 241, 1);
+    font-size: 20px;
+    -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+}
+.ConseguirPremium:hover{
+    background-color: rgba(255,110,84,0.9);
+    -webkit-box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.75);
+}

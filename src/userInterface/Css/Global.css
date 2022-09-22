@@ -1,0 +1,80 @@
+/* 
+    background-color: rgba(3, 52, 85, 1);
+    background-color: rgba(10, 119, 192, 1);
+    background-color: rgba(20, 255, 223,1);
+    background-color: rgba(20, 161, 255, 1);
+    background-color: rgba(108,178,224,1);
+    background-color: rgba(255,110,84,1);
+    background-color: rgba(204, 38, 37, 1);
+    background-color: rgba(179, 177, 5, 0.7);
+    background-color: rgba(245, 245, 220,1);
+
+    color: rgba(216, 231, 241, 1);
+
+*/
+* {
+    padding:0;
+    margin:0;
+    overflow: hidden;
+}
+.userInterface{
+    background-color: rgb(10, 119, 192);
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Consolas';
+}
+/* HEADER */
+.header{
+    height: 6%;
+    background-color: rgba(20, 255, 223,0.8);
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+    cursor: pointer;
+    transition: 0.2s;
+}
+.header:hover{
+    background-color: rgba(20, 255, 223,1);
+
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
+}
+.header:active{
+    background-color: rgb(248, 222, 187);
+
+}
+.navlink{
+    text-decoration: none;
+    color:rgb(3, 52, 85);
+}
+.botonCerrar{
+    position:absolute;
+    top: 0;
+    right: 0;
+    height: 30px;
+    width: 40px !important;
+    border: none    ;
+    cursor: pointer;
+    border-radius: 3px;
+    background-color: rgba(204, 38, 37, 0.1);
+
+    transition: 0.2s;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+.botonCerrar:hover,.botonCerrar:active{
+    background-color: rgba(204, 38, 37, 0.8);
+    -webkit-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.75);
+}
+@media screen and (min-width: 768px){
+
+}    
