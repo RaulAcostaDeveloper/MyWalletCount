@@ -56,7 +56,8 @@ export const Gastos =({ gastos, handleGasto, restante, handleActualizaGastos })=
         handleToggleForm();
     }
     const handleBorrar = id => {
-        let nuevoArreglo = gastos;
+        let nuevoArreglo = gastos.map(item=> item); //El problema era que no detecta el splice como cambio, y no rentediza de nuevo
+
         for (let index = 0; index < nuevoArreglo.length; index++) {
             if (nuevoArreglo[index].id === id) {
                 nuevoArreglo.splice(index, 1);

@@ -57,7 +57,7 @@ export const Lujos =({ lujos, handleLujo, restante, handleActualizaLujos })=>{
 
     }
     const handleBorrar = id => {
-        let nuevoArreglo = lujos;
+        let nuevoArreglo = lujos.map(item=> item); //El problema era que no detecta el splice como cambio, y no rentediza de nuevo
         for (let index = 0; index < nuevoArreglo.length; index++) {
             if (nuevoArreglo[index].id === id) {
                 nuevoArreglo.splice(index, 1);
