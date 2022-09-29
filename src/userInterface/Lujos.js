@@ -63,6 +63,7 @@ export const Lujos =({ lujos, handleLujo, restante, handleActualizaLujos })=>{
                 nuevoArreglo.splice(index, 1);
             }
         }
+        console.log( nuevoArreglo );
         handleActualizaLujos( nuevoArreglo )
     }
     return (

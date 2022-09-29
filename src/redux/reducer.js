@@ -6,8 +6,12 @@ let initialAhorros = [];
 let initialGastos = [];
 let initialLujos = [];
 
+// localStorage.clear(); // <--------------------------------------------------------
+
 let items = JSON.parse(localStorage.getItem('items'));
 if (items) {
+    console.log('LocalStorage');
+    console.log(items);
     initialClave = items.clave;
     initialIngreso = items.ingreso;
     initialAhorros = items.ahorros;
@@ -35,7 +39,7 @@ const ingresoReducer = (state = initialIngreso, action) => {
 const ahorrosReducer = (state = initialAhorros, action) =>{
     switch (action.type) {
         case 'ahorros/actualizar': {
-            return action.payload;
+            return  state = action.payload;
         }
         case 'ahorros/aniadir': {
             return state.concat({ ...action.payload });

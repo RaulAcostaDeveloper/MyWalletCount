@@ -20,7 +20,7 @@ export const PrincipalPage = ({ ingreso, restante, handleIngreso, promedioDiario
             </BotonPremium>
             <div className='principalPage'>
                 <div className='header'>
-                    <span>My Wallet Count</span>
+                    <span>Control Quincenal</span>
                 </div>
                 <div className='contenedorIngresoQuincenal'>
                     <div className='contenedorValorIngresoQuincenal'>

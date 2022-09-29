@@ -19,7 +19,7 @@ const App = () => {
 
   const clave   = useSelector( selectClave   );
   const ingreso = useSelector( selectIngreso );
-  const ahorros = useSelector( selectAhorros );
+  const ahorros = useSelector( selectAhorros ); //Cuando actualiza (borra) no trae el select
   const gastos  = useSelector( selectGastos  );
   const lujos   = useSelector( selectLujos   );
   const status  = useSelector( selectStatus  );
@@ -28,11 +28,9 @@ const App = () => {
   const [ promedioDiario, setPromedioDiario] = useState(0);    
   const [ forzaRenderiza, setForzaRenderiza ] = useState(false);
 
-
-  useEffect(()=>{
-    // Actualiza Local Storage
-    localStorage.setItem('items', JSON.stringify({clave,ingreso,ahorros,gastos,lujos,status}))
-  },[clave,ingreso,ahorros, gastos,lujos,status])
+  console.log('Render App');
+  //Mantiene actualizado el local storage en cada render
+  localStorage.setItem('items', JSON.stringify({clave,ingreso,ahorros,gastos,lujos,status}))
 
   useEffect(()=>{
     if ( clave ) {
@@ -48,6 +46,7 @@ const App = () => {
       let totalGastos = gastos.map( gasto => gasto.cantidad ).reduce(( prev, curr ) => prev + curr, 0);
       let totalLujos = lujos.map( lujo => lujo.cantidad ).reduce(( prev, curr ) => prev + curr, 0);
       setRestante(ingreso - totalAhorro - totalGastos - totalLujos );
+      console.log('Cálculo');
   },[ingreso, ahorros, gastos, lujos]);
 
   useEffect(()=>{
