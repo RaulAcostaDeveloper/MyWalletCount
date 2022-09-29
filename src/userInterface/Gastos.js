@@ -67,11 +67,11 @@ export const Gastos =({ gastos, handleGasto, restante, handleActualizaGastos })=
     return (
         <div className='userInterface'>
             <div className='listaScreen'> 
-                <NavLink className='navlink' to='/'>
-                    <div className='header'>
-                        <span>Atras</span>
-                    </div>
-                </NavLink>
+                <div className='header'>
+                    <NavLink className='navlink' to='/'>
+                        <span>Inicio</span>
+                    </NavLink>
+                </div>
                 <button className='agregarBoton' onClick={handleToggleForm} >
                 <div className='agregarGastosBoton'>
                         <span>Agregar gasto</span>
@@ -102,7 +102,7 @@ export const Gastos =({ gastos, handleGasto, restante, handleActualizaGastos })=
                                     <span>{gasto.nombre}</span>
                                 </div>
                                 <div className='contenedorCantidad'>
-                                    <span>{gasto.cantidad}</span>
+                                    <span>${gasto.cantidad}</span>
                                 </div>
                                 <button className='contenedorBorrar' onClick={()=>handleBorrar(gasto.id)}>
                                     <span>X</span>

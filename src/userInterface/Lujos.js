@@ -69,11 +69,11 @@ export const Lujos =({ lujos, handleLujo, restante, handleActualizaLujos })=>{
     return (
         <div className='userInterface'>
             <div className='listaScreen'> 
-                <NavLink className='navlink' to='/'>
-                    <div className='header'>
-                        <span>Atras</span>
-                    </div>
-                </NavLink>
+                <div className='header'>
+                    <NavLink className='navlink' to='/'>
+                        <span>Inicio</span>
+                    </NavLink>
+                </div>
                 <button className='agregarBoton' onClick={handleToggleForm} >
                     <div className='agregarLujosBoton'>
                         <span>Agregar lujo</span>
@@ -104,7 +104,7 @@ export const Lujos =({ lujos, handleLujo, restante, handleActualizaLujos })=>{
                                     <span>{lujo.nombre}</span>
                                 </div>
                                 <div className='contenedorCantidad'>
-                                    <span>{lujo.cantidad}</span>
+                                    <span>${lujo.cantidad}</span>
                                 </div>
                                 <button className='contenedorBorrar' onClick={()=>handleBorrar(lujo.id)}>
                                     <span>X</span>

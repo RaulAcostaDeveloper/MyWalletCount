@@ -1,12 +1,16 @@
 .listaScreen{
     height: 100%;
-
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .agregarBoton{
+    margin-top: 40px;
     height: 12%;
     cursor:pointer;
-    width: 100%;
+    width: 80%;
     border: none;
+    border-radius: 10px;
     color: rgba(216, 231, 241, 1);
     font-weight: 700;
     font-size: 15px;
@@ -27,15 +31,25 @@
 .contenedorLista{ 
     /* Aquí debe ir el scroll */
     width: 100%;
+    margin-top: 40px;
+    background-color: rgb(10, 119, 192);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .contenedorElemento{
     height: 50px;
-    width: 100%;
+    width: 95%;
     display: flex;
     justify-content: center;
     cursor:default;
     color: rgba(216, 231, 241, 1);
-
+    
+}
+.contenedorElemento:hover, .contenedorElemento:active{
+    background-color: rgb(87, 151, 194);
+    
 }
 .contenedorNombre{
     width: 40%;

@@ -8,11 +8,11 @@ export const Premium = () => {
     return (
         <div className='userInterface'>
             <div className='Premium'> 
-                <NavLink className='navlink' to='/'>
-                    <div className='header'>
+                <div className='header'>
+                    <NavLink className='navlink' to='/'>
                         <span>Atras</span>
-                    </div>
-                </NavLink>
+                    </NavLink>
+                </div>
                 <div className='info'>
                     <div>
 
@@ -22,7 +22,7 @@ export const Premium = () => {
                 </div>
                 <div 
                     className='ConseguirPremium'
-                    onClick = { () => { setMensajeModal('No existe el servicio'); setOpenModal(true) }} >
+                    onClick = { () => { setMensajeModal('Aún no existe el servicio'); setOpenModal(true) }} >
                         Conseguir premium
                 </div>
 

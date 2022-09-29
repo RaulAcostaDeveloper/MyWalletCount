@@ -54,7 +54,7 @@
 }
 /* RESTANTE */
 .contenedorRestante{
-    height: 17%;  /* {-----     */
+    height: 15%;  /* {-----     */
 }
 .contenedorValorRestante{
     height: 50%;
@@ -86,7 +86,7 @@
 }
 /* PROMEDIO DIARIO */
 .contenedorPromedioDiarioLibre{
-    height: 16%;  /* {-----     */
+    height: 15%;  /* {-----     */
         border-top: solid 1px rgba(245, 245, 220,1);
     border-bottom: solid 1px rgba(245, 245, 220,1);
 }
@@ -120,6 +120,7 @@
 }
 /* LISTAS */
 .listaBoton{
+    margin-top: 1px;
     height: 12%; /* {----     */
     cursor:pointer;
     color: rgba(216, 231, 241, 1);

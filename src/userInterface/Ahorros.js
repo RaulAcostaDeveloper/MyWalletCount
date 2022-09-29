@@ -69,11 +69,11 @@ export const Ahorros =({ ahorros, handleAhorro, restante, handleActualizaAhorros
     return (
         <div className='userInterface'>
             <div className='listaScreen'> 
-                <NavLink className='navlink' to='/'>
-                    <div className='header'>
-                        <span>Atras</span>
-                    </div>
-                </NavLink>
+                <div className='header'>
+                    <NavLink className='navlink' to='/'>
+                        <span>Inicio</span>
+                    </NavLink>
+                </div>
                 <button className='agregarBoton' onClick={handleToggleForm} >
                     <div className='agregarAhorrosBoton'>
                         <span>Agregar ahorro</span>
@@ -104,7 +104,7 @@ export const Ahorros =({ ahorros, handleAhorro, restante, handleActualizaAhorros
                                     <span>{ahorro.nombre}</span>
                                 </div>
                                 <div className='contenedorCantidad'>
-                                    <span>{ahorro.cantidad}</span>
+                                    <span>${ahorro.cantidad}</span>
                                 </div>
                                 <button className='contenedorBorrar' onClick={()=>handleBorrar(ahorro.id)}>
                                     <span>X</span>
