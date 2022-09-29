@@ -18,13 +18,13 @@
 }
 .userInterface{
     background-color: rgb(10, 119, 192);
-    height: 100vh;
     width: 100%;
     font-family: 'Consolas';
+    min-height: 100vh;
 }
 /* HEADER */
 .header{
-    height: 8%;
+    height: 8vh;
     width: 100%;
     background-color: rgba(20, 255, 223,0.8);
     font-size: 20px;

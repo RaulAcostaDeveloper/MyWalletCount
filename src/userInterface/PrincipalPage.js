@@ -35,7 +35,8 @@ export const PrincipalPage = ({ ingreso, restante, handleIngreso, promedioDiario
                 </div>
                 <div className='contenedorPromedioDiarioLibre'>
                     <div className='contenedorValorPromedioDiario'>
-                        <span>${promedioDiario}</span>
+                        {/* Cuidado! al borrar no está actualizando automáticamente */}
+                        <span>${promedioDiario}</span> 
                     </div>
                     <div className='promedioDiarioSpan'>
                         <span>Promedio diario libre</span>
@@ -44,6 +45,7 @@ export const PrincipalPage = ({ ingreso, restante, handleIngreso, promedioDiario
 
                 <div className='contenedorRestante'>
                     <div className='contenedorValorRestante'>
+                        {/* Cuidado! al borrar no está actualizando automáticamente */}
                         <span>${restante}</span>
                     </div>
                     <div className='restanteSpan'>
